@@ -1,3 +1,7 @@
+var primeNUmberArray = [];
+
+var N=100; //find prime number upto 100
+
 function isPrime(n) {
     if (n < 2 || n % 2 === 0) {
       return false
@@ -15,7 +19,7 @@ function isPrime(n) {
   }
   
   var primeNUmberArray = [];
-  for (let i = 0; i <= n; i++) {
+  for (let i = 0; i <= N; i++) {
     if (isPrime(i)) {
       primeNUmberArray.push(i)
     }
