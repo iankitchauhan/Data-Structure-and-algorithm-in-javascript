@@ -67,3 +67,22 @@ return newArray;
 
 let c = d.myreduce((acc,item)=> acc +item,1);
 console.log(c,'value of c')
+
+
+//Includes method es5 support
+
+var arr = [1,2,3,4,5];
+
+Array.prototype.myinclude = function(str){
+arrData = this;
+for(let i =0;i<arrData.length;i++){
+if(arrData[i] === str){
+return true
+}
+}
+return false
+
+}
+let result = arr.myinclude(8);
+
+console.log(result,'change the data');
