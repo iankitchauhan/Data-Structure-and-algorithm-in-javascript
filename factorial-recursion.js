@@ -8,6 +8,6 @@ function facto(n) {
   
   }
   
-  var result = facto(5);
+  var result = facto(5); //5*4*3*2*1
   
   console.log(result,'result data');
