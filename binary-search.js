@@ -1,14 +1,21 @@
-function binarySearch(arr,key) {
+function binarySearch(n,key){
+    // add whatever parameters you deem necessary - good luck!
+    let left =0;
+  let right = n.length-1;
+  while(left<=right){
+      let mid = Math.round((left+right)/2);
+      if(key>n[mid]){
+          left = mid+1;
+      }
+       if(key<n[mid]){
+          right = mid-1;
+      }
+      if(key === n[mid]){
+         return mid;
+      }
+  }
+  
+  return -1;
+  }
 
-min = 0;
-max = arr.length -1;
-while(min<max) {
-    let middle = Math.floor((min +max)/2);
-    if(a[middle]>key){
-        max = middle -1;
-    } else if(a[middle]<key){
-        min = middle +1;
-    }
-}
-
-}
+  binarySearch(n,key)
