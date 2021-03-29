@@ -17,9 +17,9 @@ Function.prototype.mybind = function(...args){
     }
     
     function disName(cast,pl){
-    console.log(`My name is ${this.name}  ${this.last} cast is ${cast} place is ${pl}`)
+    console.log(`My name is ${this.name}  ${this.last} state is ${cast} country is ${pl}`)
     }
     
-    var dd = disName.mybind(obj,'guujat');
+    var dd = disName.mybind(obj,'Gujarat');
     
-    dd('dhaka');
+    dd('India');
