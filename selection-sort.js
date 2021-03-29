@@ -16,4 +16,4 @@ function selectionSort(a){
     return a;
     }
     
-    selectionSort([5,3,4,1,2]);
+    selectionSort([5,3,4,1,2]); //time complexity is O(n2) not good but better than bubble sort as we swap in the end but in bubble sort we swap on each iteration
