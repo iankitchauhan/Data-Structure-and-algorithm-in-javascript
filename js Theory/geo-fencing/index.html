@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Synchronous Loading</title>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" /> -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+  <style>
+    #map {
+      height: 60%;
+    }
+    
+    /* Optional: Makes the sample page fill the window. */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .col-md-6 {
+    width: 37%;
+    display: inline-block;
+}
+          </style>
+  <body>
+    <button onclick="createCircle()">Create circle</button>
+    <button onclick="multiPathGet()">Get routes</button>
+    <button onclick="allSociety()">Get all societies</button>
+<!-- <button  onclick="removeCircle()">Remove Circle</button> -->
+    <div id="map"></div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>List of Society</h2>
+            <div id="slct2"></div>
+            </div>
+            <div class="col-md-6">
+                <h2>List of Area</h2>
+                <div id="slct3"></div>
+
+            </div>
+        </div>
+
+        <div id="directions-panel"></div>
+   
+
+
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=places&v=weekly"
+      async
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
